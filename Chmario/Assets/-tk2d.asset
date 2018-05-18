@@ -53,6 +53,14 @@ MonoBehaviour:
     dataGUID: 
     managed: 0
     loadable: 0
+  - assetGUID: 00d42387daa007840bd4351df3defa66
+    dataGUID: 
+    managed: 0
+    loadable: 0
+  - assetGUID: c77a119ffd9f3b54a9382c4ad0badd42
+    dataGUID: 
+    managed: 0
+    loadable: 0
   fontIndex:
   - assetGUID: 063b15d80dbb4604d890600a64c79cf8
     dataGUID: e7a6b09a73c6b2b4f8060096ddbd3b5e
@@ -726,8 +734,8 @@ MonoBehaviour:
     spriteNames:
     - back
     - middle
-    - tileset-sliced
-    - tileset
+    - 
+    - 
     - big-crate
     - block-big
     - block
@@ -805,11 +813,73 @@ MonoBehaviour:
     - player-run-4
     - player-run-5
     - player-run-6
+    - narezka_0051_box-7
+    - narezka_0052_box-8
+    - narezka_0053_box-9
+    - narezka_0000_ground_trava-1
+    - narezka_0001_ground_trava-2
+    - narezka_0048_box-4
+    - narezka_0049_box-5
+    - narezka_0050_box-6
+    - narezka_0042_let_jump-1
+    - narezka_0043_let_jump-2
+    - narezka_0014_trava
+    - narezka_0002_ground_trava-3
+    - narezka_0003_ground_trava-4
+    - narezka_0004_ground_trava-5
+    - narezka_0006_ground_trava-7
+    - narezka_0007_ground_trava-8
+    - narezka_0008_ground_trava-9
+    - narezka_0009_ground_1
+    - narezka_0012_ground_wood-2
+    - narezka_0013_ground_wood-2.1
+    - narezka_0040_wall-2
+    - narezka_0041_wall-3
+    - narezka_0044_let_jump-3
+    - narezka_0045_box-1
+    - narezka_0046_box-2
+    - narezka_0047_box-3
+    - narezka_0039_wall-1
+    - narezka_0024_dekor_right
+    - narezka_0010_ground_wood-1
+    - narezka_0011_ground_wood-1.1
+    - narezka_0030_bush_big_2
+    - narezka_0031_bush_wall
+    - narezka_0032_potolok-1
+    - narezka_0028_coub-2
+    - narezka_0029_bush_big-1
+    - narezka_0036_shkaf
+    - narezka_0037_fire
+    - narezka_0038_wall_big
+    - narezka_0034_potolok-3
+    - narezka_0035_potolok-4
+    - narezka_0021_penok-1
+    - narezka_0005_ground_trava-6
+    - narezka_0015_trava-2
+    - narezka_0016_bush-1
+    - narezka_0019_ground-2
+    - narezka_0020_stairs
+    - narezka_0022_penok-2
+    - narezka_0023_dekor_left
+    - narezka_0025_dekor_big_1
+    - narezka_0026_dekor_big_2
+    - narezka_0017_bush-2
+    - narezka_0018_ground-1
+    - narezka_0033_potolok-2
+    - narezka_0027_coub-1
+    - narezka_0054_up_left
+    - narezka_0055_up_right
+    - narezka_0056_up_left-1
+    - narezka_0057_up_right-1
+    - narezka_0058_trava_left
+    - narezka_0060_trava_left-1
+    - narezka_0061_Trava_right-1
+    - narezka_0059_trava_right
     spriteTextureGUIDs:
     - 8e160a2a620644cd6afef9119dad1093
     - de41d366c687a46beb6a9acaa88c12db
-    - 261212b977f594d5dbc48631a5c1295c
-    - 3b66e1a27c9634fe9a4746c47eeda7cc
+    - 
+    - 
     - 3fc2bbd409bf34ab6af1637bab569da1
     - 5bccf13ce09bd43e39c1c3416d5de92c
     - 8a8849b7b8b964564b9e89cb1ded0658
@@ -887,11 +957,73 @@ MonoBehaviour:
     - bc3fcf1d561104bea933686de6bade4b
     - f58cc0961cc9146ca9780a0cb1327e5d
     - af314424f59d946469a97f398e8de53f
+    - b38f74c6b7711914c97c266ae225c0ed
+    - 820b32533281a1b498e641321669fdd8
+    - 22c1016c523b9ea4e9084705ccdd61b5
+    - c8c9b72099d16f34886396f41d18ec32
+    - 80e266537fd378f499d5ed433a6ee64e
+    - fec42d8a5bb0a24469dcbab6564982ae
+    - 66b44f571360f6148ad351949c6b39f5
+    - 769c1ccceada2ca4eb38a4179f7d4f22
+    - 2bd148f0943fc5942a79f9198d32fe73
+    - 08a36e252b6ac544b991284a73a28b5f
+    - 6e1fce15dc7a7fd45a7093c3f3cc2cbc
+    - 6827db35c726ccc4e81825f508dccb88
+    - d34e2acdfd7879249abdc4357169f828
+    - b60b01434ced28d46b481ba71e28bfd9
+    - fc1faf53fe98b2e4c8f264d106f703b0
+    - 4f390c22dd1053840861c40f727d353a
+    - 69669477cca506542afd561a04a9e795
+    - 2a42eff27bdb3874d860b3bd4eb6d14f
+    - 390acc71593f6a141ad53310f86ddc87
+    - 522b0d6300c3f634eb39feedb3555ad1
+    - ab70ec3fe0e420e478533b05bd50b110
+    - bf078d248c83aba4f93e94540fa31ddb
+    - 0e2fb494dc61459459f569eebcce5ed5
+    - 4e1fd61866f3d6f48a1c08821e5608b7
+    - 66ae737a22fb52a4fb8262f04e42e64a
+    - dff9fc8295dfa95468098a789f689a6a
+    - 2fce44b5e4fc2d3488c1093de04e4fcd
+    - b27ac86f341c9f646b5732b61fbe521b
+    - f09ebda6689a65a488e722f7ae82f43f
+    - 35fdcadb81bd6f1439d704963095d0bd
+    - b831ca67f2f1cbc4586ef331b152253b
+    - cd478c21bf5b9214a8bd5cbc3a320118
+    - 61cbde807ac0ac64492d52e8030d1f9d
+    - 3ccb681bc89bd694784db42db21d691d
+    - eb681ba83f2504d41a17f8fc17eba7b7
+    - e870c73d1060a16409cd5e4cdcf11928
+    - 2e69df8fbad43ed40b9f3ec5849773a1
+    - 5fa1e0c63311d3140baeb53bdc1bd44f
+    - 8aec1b04c740ab24aade11480c92ed9a
+    - 4651d3d6929ec2e40b644162b276e985
+    - f800f648fd669e745af566cf599bf2f0
+    - 38a47e328a0653c4faf404bc7bbffd7e
+    - 7974f36e2112e684ab02574373e755ec
+    - 6bb5fcaa9d57b444f95f1d07277f47cb
+    - 63ae60bd3ee41f8409e3e9926eb7040c
+    - f518a522446bb864f923bc2c2d3d100c
+    - ac3bb6b68854a3b4dba054e470f98b5a
+    - fb6c2075411a5584993064faa6b6bf12
+    - 18c99c4ce9cfd69428a7969cbd68eed5
+    - f9c01bb6fd7da4241bb77efa16d9c740
+    - e0376045bcb82f841b3cb1af9a0b9cd5
+    - 9be1a42d836362c479d08aa312af45c6
+    - 733de82c5e4b73d4681c0f226982c651
+    - ce118cf4056e1d8429c366a1b111a176
+    - bc48e977702144142a8bc136f50e4131
+    - af95f34ecb7f1e643ad1aaf97a1c8507
+    - 0ddf4c50e16f09849a4d95264ebafa3a
+    - d7701aaabfafe2c49878fb3838e2bf7b
+    - fc564b69fad0dc74581d2a774664ebc2
+    - dccbd408e37633449894023599cfb2db
+    - b56ca6ba3e36eb742bc478931372c8b6
+    - 8eb26e608705c9d47bb4bbc95f4ef770
     spriteTextureTimeStamps:
     - 1526580225.92247
     - 1526580225.92495
-    - 1526580225.96455
-    - 1526580225.96656
+    - 0
+    - 0
     - 1526580225.92849
     - 1526580225.92996
     - 1526580225.93201
@@ -969,6 +1101,68 @@ MonoBehaviour:
     - 1526580226.08838
     - 1526580226.08988
     - 1526580226.09189
+    - 1526643258.72683
+    - 1526643264.38195
+    - 1526643267.75724
+    - 1526642828.05969
+    - 1526642834.01582
+    - 1526643245.26955
+    - 1526643249.59405
+    - 1526643254.68954
+    - 1526643219.98458
+    - 1526643224.25037
+    - 1526642930.65459
+    - 1526642839.68544
+    - 1526642845.58075
+    - 1526642851.55141
+    - 1526642863.96906
+    - 1526642870.10622
+    - 1526642876.17565
+    - 1526642882.7195
+    - 1526642910.66223
+    - 1526642920.51055
+    - 1526643212.78589
+    - 1526643215.8933
+    - 1526643228.61754
+    - 1526643232.37441
+    - 1526643236.04349
+    - 1526643240.49765
+    - 1526643208.04445
+    - 1526643033.80238
+    - 1526642889.7584
+    - 1526642900.34735
+    - 1526643103.17819
+    - 1526643114.60811
+    - 1526643124.30529
+    - 1526643080.39527
+    - 1526643091.44346
+    - 1526643172.66624
+    - 1526643185.05352
+    - 1526643196.67672
+    - 1526643146.63052
+    - 1526643160.0357
+    - 1526643000.73945
+    - 1526642858.11583
+    - 1526642941.0129
+    - 1526642949.44964
+    - 1526642978.38545
+    - 1526642989.46321
+    - 1526643011.21861
+    - 1526643022.6351
+    - 1526643045.58392
+    - 1526643057.72304
+    - 1526642956.29042
+    - 1526642967.18629
+    - 1526643134.14985
+    - 1526643069.36142
+    - 1526643274.66512
+    - 1526643289.96345
+    - 1526643300.09088
+    - 1526643309.49937
+    - 1526643318.70648
+    - 1526643338.5279
+    - 1526643346.32994
+    - 1526643326.10503
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
