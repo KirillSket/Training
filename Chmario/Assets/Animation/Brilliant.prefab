@@ -89,6 +89,62 @@ MonoBehaviour:
       eventInfo: 
       eventInt: 0
       eventFloat: 0
-    fps: 2.5
+    - spriteCollection: {fileID: 114359219574823386, guid: 92163ac3cf7fc624baeee644640c32a4,
+        type: 2}
+      spriteId: 57
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 114359219574823386, guid: 92163ac3cf7fc624baeee644640c32a4,
+        type: 2}
+      spriteId: 57
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 114359219574823386, guid: 92163ac3cf7fc624baeee644640c32a4,
+        type: 2}
+      spriteId: 57
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 114359219574823386, guid: 92163ac3cf7fc624baeee644640c32a4,
+        type: 2}
+      spriteId: 57
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 114359219574823386, guid: 92163ac3cf7fc624baeee644640c32a4,
+        type: 2}
+      spriteId: 57
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 114359219574823386, guid: 92163ac3cf7fc624baeee644640c32a4,
+        type: 2}
+      spriteId: 57
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 114359219574823386, guid: 92163ac3cf7fc624baeee644640c32a4,
+        type: 2}
+      spriteId: 57
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 114359219574823386, guid: 92163ac3cf7fc624baeee644640c32a4,
+        type: 2}
+      spriteId: 57
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 8
     loopStart: 0
     wrapMode: 0
