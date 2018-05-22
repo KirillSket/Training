@@ -57,7 +57,7 @@ public class Player : BaseUnit
         if(!isDead)
         Move();
 
-        if(transform.position.y < -1)
+        if(transform.position.y < -100)
         {
             StartCoroutine(Die(dieAnimationTime));
         }		
