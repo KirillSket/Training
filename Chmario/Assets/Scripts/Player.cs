@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Player : BaseUnit
 {
@@ -57,10 +56,10 @@ public class Player : BaseUnit
         if(!isDead)
         Move();
 
-        if(transform.position.y < -1)
-        {
-            StartCoroutine(Die(dieAnimationTime));
-        }		
+        //if(transform.position.y < -1)
+        //{
+        //    StartCoroutine(Die(dieAnimationTime));
+        //}		
 	}
 
     private void CheckGround()
@@ -74,10 +73,4 @@ public class Player : BaseUnit
         }
         else isGrounded = false;
     }
-
-    protected void OnDestroy()
-    {
-        SceneManager.LoadScene(0);
-    }
-
 }
