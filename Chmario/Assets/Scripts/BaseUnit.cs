@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BaseUnit : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject popupGameOver;
     [SerializeField]
     protected float moveSpid = 1f;
 
@@ -44,6 +47,12 @@ public class BaseUnit : MonoBehaviour
         rb.Sleep();
         rb.isKinematic = true;
         yield return new WaitForSeconds(dieAnimationTime);
-        Destroy(gameObject);
+        if(this is Player)
+        {
+            bodySprite.gameObject.SetActive(false);
+            GameObject popupGO = Instantiate(popupGameOver, gameObject.transform);
+            popupGO.GetComponent<GameOver_popupScript>().needLevel = SceneManager.GetActiveScene().name;
+        }
+        else Destroy(gameObject);
     }
 }
