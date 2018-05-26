@@ -19,31 +19,29 @@ public class Player : BaseUnit
             if (translation > 0) bodySprite.scale = new Vector3(1, 1, 0);
             else bodySprite.scale = new Vector3(-1, 1, 0);
         }
-
-        //bool imJumpNow = false;
-        if (Input.GetButtonDown("Vertical"))
+        if (Input.GetAxis("Vertical") > 0 && Input.GetButtonDown("Vertical") && jumpCount < 2)
         {
-            float ver = Input.GetAxis("Vertical");
-            if (ver > 0 && jumpCount < 2)
+            jumpCount++;
+            rb.AddForce(transform.up * jumpForse);
+        }
+        if (Input.GetAxis("Vertical") < 0)
+        {
+            // добавить логику присажывания
+        }
+        AnimDistributor();
+    }
+    private void AnimDistributor()
+    {
+        if(Input.GetAxis("Vertical") < 0) bodyAnimator.Play("crouch");
+        else
+        {
+            if(!isGrounded) bodyAnimator.Play("jump");
+            else
             {
-                //imJumpNow = true;
-                jumpCount++;
-                rb.AddForce(transform.up * jumpForse);
-                bodyAnimator.Play("jump");
+                if(Input.GetAxis("Horizontal") == 0) bodyAnimator.Play("idle");
+                else bodyAnimator.Play("run");
             }
         }
-        if (Input.GetButton("Vertical")/* && isGrounded*/)
-        {
-            float ver = Input.GetAxis("Vertical");
-            if (ver < 0)
-            {
-                bodyAnimator.Play("crouch");
-            }
-        }
-        else if (Input.GetAxis("Horizontal") != 0 && isGrounded) bodyAnimator.Play("run");
-
-        if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") >= 0 && isGrounded && !bodyAnimator.IsPlaying("hurt"))
-            bodyAnimator.Play("idle");
     }
 
     private void FixedUpdate()
@@ -56,11 +54,11 @@ public class Player : BaseUnit
         if(!isDead)
         Move();
 
-        //if(transform.position.y < -1)
-        //{
-        //    StartCoroutine(Die(dieAnimationTime));
-        //}		
-	}
+        if (transform.position.y < -1000)
+        {
+            StartCoroutine(Die(dieAnimationTime));
+        }
+    }
 
     private void CheckGround()
     {
