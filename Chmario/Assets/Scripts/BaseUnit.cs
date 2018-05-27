@@ -37,7 +37,7 @@ public class BaseUnit : MonoBehaviour
         if (toDeath) hp = 0;
         else hp--;
         if (!isDead) Jerk();
-        if (hp <= 0) StartCoroutine(Die(dieAnimationTime));
+        if (hp <= 0 && !isDead) StartCoroutine(Die(dieAnimationTime));
         if (hp > 0 && this is Player) bodyAnimator.Play("hurt");
     }
     protected virtual IEnumerator Die(float dieAnimationTime)
@@ -52,7 +52,7 @@ public class BaseUnit : MonoBehaviour
         if(this is Player)
         {
             bodySprite.gameObject.SetActive(false);
-            GameObject popupGO = Instantiate(popupGameOver, gameObject.transform);
+            GameObject popupGO = Instantiate(popupGameOver, GameObject.FindGameObjectWithTag("MainCamera").transform);
             popupGO.GetComponent<GameOver_popupScript>().needLevel = SceneManager.GetActiveScene().name;
         }
         else Destroy(gameObject);
