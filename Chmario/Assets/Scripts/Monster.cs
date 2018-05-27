@@ -27,6 +27,7 @@ public class Monster : BaseUnit
         {
             if (Mathf.Abs(unit.transform.position.x - transform.position.x) < 0.15f)
             {
+                unit.point++;
                 unit.Jerk();
                 TakeDamage(false);
             }

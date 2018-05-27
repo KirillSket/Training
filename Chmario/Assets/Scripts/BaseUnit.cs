@@ -15,6 +15,7 @@ public class BaseUnit : MonoBehaviour
     protected float dieAnimationTime = 1.5f;
     [SerializeField]
     public int hp = 1;
+    public int point = 0;
 
     protected tk2dSprite bodySprite;
     protected tk2dSpriteAnimator bodyAnimator;
