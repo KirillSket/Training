@@ -9,6 +9,14 @@ public class Player : BaseUnit
     private bool isGrounded = false;
     private int jumpCount = 1;
 
+    private bool jump_offPlatform = false;
+
+    private CapsuleCollider2D myCapsColl;
+    private void Start()
+    {
+        myCapsColl = GetComponent<CapsuleCollider2D>();
+    }
+
     private void Move()
     {
         if (Input.GetButton("Horizontal"))
@@ -27,7 +35,9 @@ public class Player : BaseUnit
         if (Input.GetAxis("Vertical") < 0)
         {
             // добавить логику присажывания
+            jump_offPlatform = true;
         }
+        else if (Input.GetAxis("Vertical") >= 0) jump_offPlatform = false;
         AnimDistributor();
     }
     private void AnimDistributor()
@@ -70,5 +80,13 @@ public class Player : BaseUnit
             isGrounded = true;
         }
         else isGrounded = false;
+
+        foreach(Collider2D c in colliders)
+        {
+            if(c.tag == "Platform" && !jump_offPlatform)
+            {
+                c.GetComponent<BoxCollider2D>().isTrigger = false;
+            }
+        }
     }
 }
