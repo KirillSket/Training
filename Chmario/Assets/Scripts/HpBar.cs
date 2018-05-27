@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class HpBar : MonoBehaviour
 {
-    [SerializeField]
     private Player player;
     [SerializeField]
     private int pixelIconX = 21;
@@ -17,6 +16,8 @@ public class HpBar : MonoBehaviour
     private void Awake()
     {
         mySprite = GetComponent<tk2dTiledSprite>();
+        if (player == null)
+            player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
     private void FixedUpdate()
