@@ -46,6 +46,8 @@ public class BaseUnit : MonoBehaviour
         bodyAnimator.Play("death");
         rb.Sleep();
         rb.isKinematic = true;
+        BoxCollider2D[] bc2d = GetComponents<BoxCollider2D>();
+        foreach(BoxCollider2D b in bc2d) b.isTrigger = true;
         yield return new WaitForSeconds(dieAnimationTime);
         if(this is Player)
         {
