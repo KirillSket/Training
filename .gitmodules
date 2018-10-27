@@ -1,0 +1,4 @@
+[submodule "Test-task-StageX"]
+	path = Test-task-StageX
+	url = https://github.com/wma3xw/Test-task-StageX.git
+	branch = testSabchic
